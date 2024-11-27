@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Eb7t4PymsxqBxUcGsBjsxd0UmddljJ2zXLBM6umgx/k=",
+  "Source": "SkiCommerce.API",
+  "BasePath": "_content/SkiCommerce.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

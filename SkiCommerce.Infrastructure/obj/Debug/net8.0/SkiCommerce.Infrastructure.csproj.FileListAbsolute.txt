@@ -1,0 +1,15 @@
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\bin\Debug\net8.0\SkiCommerce.Infrastructure.deps.json
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\bin\Debug\net8.0\SkiCommerce.Infrastructure.dll
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\bin\Debug\net8.0\SkiCommerce.Infrastructure.pdb
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\bin\Debug\net8.0\SkiCommerce.Core.dll
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\bin\Debug\net8.0\SkiCommerce.Core.pdb
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.AssemblyInfo.cs
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiComme.D549F9C1.Up2Date
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.dll
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\refint\SkiCommerce.Infrastructure.dll
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.pdb
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\ref\SkiCommerce.Infrastructure.dll
