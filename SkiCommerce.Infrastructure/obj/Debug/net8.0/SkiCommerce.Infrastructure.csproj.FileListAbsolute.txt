@@ -13,3 +13,4 @@ C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Deb
 C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\refint\SkiCommerce.Infrastructure.dll
 C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.pdb
 C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\ref\SkiCommerce.Infrastructure.dll
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Infrastructure\obj\Debug\net8.0\SkiCommerce.Infrastructure.sourcelink.json

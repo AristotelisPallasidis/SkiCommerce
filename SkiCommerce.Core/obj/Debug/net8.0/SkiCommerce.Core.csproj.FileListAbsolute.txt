@@ -9,3 +9,4 @@ C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Core\obj\Debug\net8.0\
 C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Core\obj\Debug\net8.0\refint\SkiCommerce.Core.dll
 C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Core\obj\Debug\net8.0\SkiCommerce.Core.pdb
 C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Core\obj\Debug\net8.0\ref\SkiCommerce.Core.dll
+C:\Users\Aristotelis\source\repos\SkiCommerce\SkiCommerce.Core\obj\Debug\net8.0\SkiCommerce.Core.sourcelink.json
