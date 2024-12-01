@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkiCommerce.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de6df35625fd75ba0d8401775bc2ce264a07b9b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e274434155254a78c879720444efc8dbc250b4f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkiCommerce.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkiCommerce.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

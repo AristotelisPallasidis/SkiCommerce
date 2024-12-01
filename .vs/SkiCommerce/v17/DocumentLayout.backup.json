@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74D92CC7-6F22-4439-9113-8BD21D417D42}|SkiCommerce.API\\SkiCommerce.API.csproj|c:\\users\\aristotelis\\source\\repos\\skicommerce\\skicommerce.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{74D92CC7-6F22-4439-9113-8BD21D417D42}|SkiCommerce.API\\SkiCommerce.API.csproj|solutionrelative:skicommerce.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74D92CC7-6F22-4439-9113-8BD21D417D42}|SkiCommerce.API\\SkiCommerce.API.csproj|c:\\users\\aristotelis\\source\\repos\\skicommerce\\skicommerce.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{74D92CC7-6F22-4439-9113-8BD21D417D42}|SkiCommerce.API\\SkiCommerce.API.csproj|solutionrelative:skicommerce.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{066F1F3A-B79E-4520-90C3-970A1D94A044}|SkiCommerce.Infrastructure\\SkiCommerce.Infrastructure.csproj|c:\\users\\aristotelis\\source\\repos\\skicommerce\\skicommerce.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{066F1F3A-B79E-4520-90C3-970A1D94A044}|SkiCommerce.Infrastructure\\SkiCommerce.Infrastructure.csproj|solutionrelative:skicommerce.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E0FE582-2F58-480F-AB65-DFF3CD4B406A}|SkiCommerce.Core\\SkiCommerce.Core.csproj|c:\\users\\aristotelis\\source\\repos\\skicommerce\\skicommerce.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E0FE582-2F58-480F-AB65-DFF3CD4B406A}|SkiCommerce.Core\\SkiCommerce.Core.csproj|solutionrelative:skicommerce.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 477,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,44 +39,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Aristotelis\\source\\repos\\SkiCommerce\\SkiCommerce.Core\\Class1.cs",
-              "RelativeDocumentMoniker": "SkiCommerce.Core\\Class1.cs",
-              "ToolTip": "C:\\Users\\Aristotelis\\source\\repos\\SkiCommerce\\SkiCommerce.Core\\Class1.cs",
-              "RelativeToolTip": "SkiCommerce.Core\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T23:35:43.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Aristotelis\\source\\repos\\SkiCommerce\\SkiCommerce.Infrastructure\\Class1.cs",
-              "RelativeDocumentMoniker": "SkiCommerce.Infrastructure\\Class1.cs",
-              "ToolTip": "C:\\Users\\Aristotelis\\source\\repos\\SkiCommerce\\SkiCommerce.Infrastructure\\Class1.cs",
-              "RelativeToolTip": "SkiCommerce.Infrastructure\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T23:36:30.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Aristotelis\\source\\repos\\SkiCommerce\\SkiCommerce.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "SkiCommerce.API\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Aristotelis\\source\\repos\\SkiCommerce\\SkiCommerce.API\\appsettings.Development.json",
-              "RelativeToolTip": "SkiCommerce.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-25T21:34:49.715Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -7,6 +7,7 @@ namespace SkiCommerce.Infrastructure.Data;
 
 public class StoreContext(DbContextOptions options) : DbContext(options)
 {
+    // Database Entitites
     public required DbSet<Product> Products { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
