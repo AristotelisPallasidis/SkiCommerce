@@ -1,7 +1,7 @@
 services:
   sql:
     image: mcr.microsoft.com/azure-sql-edge
-    container_name: skicommerce
+    container_name: SkiCommerce
     environment:
       ACCEPT_EULA: "Y"
       MSSQL_SA_PASSWORD: "Password123!"
