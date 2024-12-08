@@ -1,0 +1,28 @@
+using System;
+using System.Runtime.CompilerServices;
+using System.Text.Json;
+using SkiCommerce.Core.Entities;
+
+namespace SkiCommerce.Infrastructure.Data;
+
+public class StoreContextSeed
+{
+    public static async Task SeedAsync(StoreContext context)
+    {
+        if (!context.Products.Any())
+        {
+            var productsData = await File.ReadAllTextAsync("../SkiCommerce.Infrastructure/Data/SeedData/products.json");
+            var products = JsonSerializer.Deserialize<List<Product>>(productsData);
+
+            if (products == null)
+            {
+                return;
+            }
+
+            context.Products.AddRange(products);
+
+            await context.SaveChangesAsync();
+        }
+    }
+
+}

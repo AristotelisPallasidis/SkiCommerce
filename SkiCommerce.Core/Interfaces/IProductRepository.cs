@@ -4,7 +4,7 @@ namespace SkiCommerce.Core.Interfaces
 {
     public interface IProductRepository
     {
-        Task<IReadOnlyList<Product>> GetProducts();
+        Task<IReadOnlyList<Product>> GetProductsAsync();
         Task<Product?> GetProductByIdAsync(int id);
         void AddProduct(Product product);
         void UpdateProduct(Product product);

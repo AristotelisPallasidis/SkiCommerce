@@ -4,58 +4,43 @@ using SkiCommerce.Core.Interfaces;
 
 namespace SkiCommerce.Infrastructure.Data
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository(StoreContext context) : IProductRepository
     {
-        private readonly DbContext _dbContext;
-
-        public ProductRepository(DbContext dbContext)
-        {
-            _dbContext = dbContext;
-        }
 
         public void AddProduct(Product product)
         {
-            throw new NotImplementedException();
+            context.Products.Add(product);
         }
 
         public void DeleteProduct(Product product)
         {
-            throw new NotImplementedException();
+            context.Products.Remove(product);
         }
 
-        public async Task<Product> GetProductByIdAsync(int id)
+        public async Task<Product?> GetProductByIdAsync(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<IReadOnlyList<Product>> GetProducts()
-        {
-            throw new NotImplementedException();
+            return await context.Products.FindAsync(id);
         }
 
         public async Task<IReadOnlyList<Product>> GetProductsAsync()
         {
-            throw new NotImplementedException();
+            return await context.Products.ToListAsync();
         }
 
         public bool ProductExists(int id)
         {
-            throw new NotImplementedException();
+            return context.Products.Any(product => product.Id == id);
         }
 
-        public Task<bool> SaveChangesAsync()
+        public async Task<bool> SaveChangesAsync()
         {
-            throw new NotImplementedException();
+            return await context.SaveChangesAsync() > 0;
         }
 
         public void UpdateProduct(Product product)
         {
-            throw new NotImplementedException();
+            context.Entry(product).State = EntityState.Modified;
         }
 
-        Task<Product?> IProductRepository.GetProductByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
