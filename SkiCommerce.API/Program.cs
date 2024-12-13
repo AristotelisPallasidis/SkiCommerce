@@ -16,6 +16,7 @@ builder.Services.AddDbContext<StoreContext>(options =>
 });
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 
 var app = builder.Build();
@@ -32,7 +33,7 @@ try
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<StoreContext>();
     await context.Database.MigrateAsync();
-    await SeedData.SeedAsync(context);
+    await StoreContextSeed.SeedAsync(context);
 }
 catch (Exception ex)
 {
