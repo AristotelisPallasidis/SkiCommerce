@@ -39,7 +39,7 @@ namespace SkiCommerce.API.Controllers
         }
 
         /// <summary>
-        /// 
+        /// This functuon creates a product in the database.
         /// </summary>
         /// <param name="product"></param>
         /// <returns></returns>

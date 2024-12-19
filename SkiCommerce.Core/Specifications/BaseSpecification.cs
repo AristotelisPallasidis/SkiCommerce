@@ -4,14 +4,12 @@ using SkiCommerce.Core.Interfaces;
 
 namespace SkiCommerce.Core.Specifications;
 
-public class Specification<T> : ISpecification<T>
+public class Specification<T>(Expression<Func<T, bool>> criteria) : ISpecification<T>
 {
-    private readonly Expression<Func<T, bool>> criteria;
-    
-    public Specification(Expression<Func<T, bool>> criteria)
-    {
-        this.criteria = criteria;
-    }
-
     public Expression<Func<T, bool>> Criteria => criteria;
+
+    public Expression<Func<T, object>>? OrderBy { get; private set; }
+
+    public Expression<Func<T, object>>? OrderByDescending { get; private set; }
 }
+
