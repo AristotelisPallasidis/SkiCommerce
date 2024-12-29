@@ -1,5 +1,7 @@
 using System;
+using System.Linq.Expressions;
 using SkiCommerce.Core.Entities;
+using SkiCommerce.Core.Interfaces;
 
 namespace SkiCommerce.Core.Specifications;
 
@@ -26,4 +28,5 @@ public class ProductSpecification : BaseSpecification<Product>
                 break;
         }
     }
+
 }

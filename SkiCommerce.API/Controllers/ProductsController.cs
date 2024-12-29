@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using SkiCommerce.Core.Entities;
 using SkiCommerce.Core.Interfaces;
-using SkiCommerce.Infrastructure.Data;
+using SkiCommerce.Core.Specifications;
 
 namespace SkiCommerce.API.Controllers
 {
@@ -10,22 +9,17 @@ namespace SkiCommerce.API.Controllers
     [Route("api/[controller]")]
     public class ProductsController(IGenericRepository<Product> repo) : ControllerBase
     {
-        /// <summary>
-        /// In this function, we are returning a list of products from the database.
-        /// </summary>
-        /// <returns>The List of Prodcuts</returns>
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
+        public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts([FromQuery]ProductSpecParams specParams)
         {
-            return Ok(await repo.ListAllAsync());
+            var spec = new ProductSpecification(specParams);
+
+            var products = await repo.ListAsync(spec);
+
+            return Ok(products);
         }
 
-        /// <summary>
-        /// This function returns a product from the database.
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        /// [HttpGet("{id:int}")] // api/products/2
+        [HttpGet("{id:int}")] // api/products/2
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
             var product = await repo.GetByIdAsync(id);
@@ -38,11 +32,6 @@ namespace SkiCommerce.API.Controllers
             return product;
         }
 
-        /// <summary>
-        /// This functuon creates a product in the database.
-        /// </summary>
-        /// <param name="product"></param>
-        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct(Product product)
         {
@@ -56,12 +45,6 @@ namespace SkiCommerce.API.Controllers
             return BadRequest("Problem creating product!");
         }
 
-        /// <summary>
-        /// This function updates a product in the database.
-        /// </summary>
-        /// <param name="id"></param>
-        /// <param name="product"></param>
-        /// <returns></returns>
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateProduct(int id, Product product)
         {
@@ -80,11 +63,6 @@ namespace SkiCommerce.API.Controllers
             return BadRequest("Problem updating the product!");
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
@@ -119,12 +97,6 @@ namespace SkiCommerce.API.Controllers
             return Ok();
         }
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         private bool ProductExists(int id)
         {
             return repo.Exists(id);
