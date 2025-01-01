@@ -1,12 +1,7 @@
 <app-header></app-header>
 
 <div class="container mt-6">
-    <h2 class="text-3xl font-bold">Welcome to {{title}}</h2>
-    <ul>
-        @for (product of products; track product.id) {
-            <li class="text-xl mt-4">{{product.name}}</li>
-        }
-    </ul>
+    <app-shop></app-shop>
 </div>
 
 <app-footer></app-footer>
