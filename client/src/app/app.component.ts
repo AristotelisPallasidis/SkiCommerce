@@ -6,24 +6,15 @@ import { HttpClient } from '@angular/common/http';
 import { Product } from './shared/models/product';
 import { Pagination } from './shared/models/pagination';
 import { ShopService } from './core/services/shop.service';
+import { ShopComponent } from "./features/shop/shop.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, ShopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
-  private shopService = inject(ShopService);
+export class AppComponent {
   title = 'SkiCommerce';
-  products: Product[] = [];
-
-  ngOnInit(): void {
-    this.shopService.getProducts().subscribe({
-      next: response => this.products = response.data,
-      error: error => console.error(error),
-    });
-  }
-
 }
