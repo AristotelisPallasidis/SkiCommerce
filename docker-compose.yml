@@ -1,0 +1,15 @@
+services:
+  sql:
+    image: mcr.microsoft.com/azure-sql-edge
+    container_name: SkiCommerce
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Strong&SecureP@ssw0rd!" # Use a stronger password
+    ports:
+      - "1433:1433" # Consider limiting external access if not required
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-U", "sa", "-P", "Strong&SecureP@ssw0rd!", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
