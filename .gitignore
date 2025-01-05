@@ -482,3 +482,7 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+docker-compose.yml
+
+SkiCommerce.API/appsettings.Development.json
