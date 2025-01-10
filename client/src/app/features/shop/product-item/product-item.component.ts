@@ -7,11 +7,11 @@ import { MatIcon } from '@angular/material/icon';
 @Component({
   selector: 'app-product-item',
   imports: [
+    CurrencyPipe,
     MatCard,
     MatCardContent,
     MatCardActions,
-    MatIcon,
-    CurrencyPipe
+    MatIcon
   ],
   templateUrl: './product-item.component.html',
   styleUrl: './product-item.component.scss'
