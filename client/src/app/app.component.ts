@@ -2,30 +2,15 @@ import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./layout/header/header.component";
 import { FooterComponent } from "./layout/footer/footer.component";
-import { HttpClient } from '@angular/common/http';
-import { Product } from './shared/models/product';
-import { Pagination } from './shared/models/pagination';
+import { ShopComponent } from "./features/shop/shop.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, ShopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
-  
-  baseUrl = 'https://localhost:5001/api/';
-  private http = inject(HttpClient);
+export class AppComponent {
   title = 'SkiCommerce';
-  products: Product[] = [];
-
-  ngOnInit(): void {
-    this.http.get<Pagination<Product>>(this.baseUrl + 'products').subscribe({
-      next: response => this.products = response.data,
-      error: error => console.error(error),
-      complete: () => console.log('complete')
-    });
-  }
-
 }
