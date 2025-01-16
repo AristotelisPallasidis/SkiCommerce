@@ -22,15 +22,15 @@ import { Product } from '../../../shared/models/product';
   styleUrl: './product-details.component.scss'
 })
 export class ProductDetailsComponent {
-  private shopService = inject(ShopService);
-  private activatedRoute = inject(ActivatedRoute);
-  product?: Product;
+  // private shopService = inject(ShopService);
+  // private activatedRoute = inject(ActivatedRoute);
+  // product?: Product;
 
-  ngOnInit() {
-    this.loadProduct();
-  }
+  // ngOnInit() {
+  //   this.loadProduct();
+  // }
 
-  getProduct(id){
+  // getProduct(id){
 
-  }
+  // }
 }
