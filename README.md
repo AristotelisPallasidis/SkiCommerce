@@ -1,4 +1,4 @@
-# SkiCommerce (in progress)
+# 🎿 SkiCommerce (in progress)
 
 based on a Udemy course with:
 - .NET 8
