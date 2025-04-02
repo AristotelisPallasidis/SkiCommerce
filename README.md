@@ -1,4 +1,4 @@
-# 🎿 SkiCommerce (Development in progress)
+# 🎿 **SkiCommerce (Under Construction)**
 
 Using:
 - .NET 8
